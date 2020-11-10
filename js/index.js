@@ -11,10 +11,24 @@ function getEle(id){
     return document.getElementById(id)
 }
 
+
+
+
+
 /*
 * Bước 1 : Tạo biến Khách hàng và gán giá trị rổng
 */
 var khachHang = {}
+
+
+
+
+
+
+
+
+
+
 
 /*
 * Bước 2: Tình Tiến khi nhấn nút tính tiền
@@ -22,6 +36,18 @@ var khachHang = {}
 getEle("btn-tinhtien").addEventListener("click", function(){
     console.log("tinh tien");
 })
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 * Bước 3: in hóa  khi nhấn nút in hóa đơn
 */ 
@@ -29,6 +55,5 @@ getEle("btn-inhoadon").addEventListener("click", function(){
     console.log("in hoa don");
 })
 
-
-
+console.log("Test branch Vuong")
 
