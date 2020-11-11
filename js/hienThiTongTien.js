@@ -6,6 +6,10 @@
 */
 function hienThiTongTien(){
     // bước 1:khachHang =  layThongTinChuyenDi()
-    // Bước 2: var tongTien = khachHang.tinhTien()
+    var khachHang = LayThongTinChuyenDi();
+    // Bước 2: var tongTien = khachHang.tinhTien();
+    var tongTien = khachHang.tinhTien();
     // Bước 3: Hiển thị tổng tiền trên màn hình
+    document.getElementById("xuatTien").innerHTML = tongTien;
+    document.getElementById("divThanhTien").style.display = "block";
 }

@@ -34,7 +34,7 @@ var khachHang = {}
 * Bước 2: Tình Tiến khi nhấn nút tính tiền
 */ 
 getEle("btn-tinhtien").addEventListener("click", function(){
-    console.log("tinh tien");
+    hienThiTongTien();
 })
 
 
