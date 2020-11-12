@@ -8,14 +8,19 @@
 *output: tongTien
 */
 function ChuyenDi(loaiXe, soKM, thoiGianCho) {
-<<<<<<< HEAD
     this.loaiXe = loaiXe,
     this.soKM = soKM,
     this.thoiGianCho = thoiGianCho,
 
     this.tinhTien = function(){
         var x,y,z,t;
-        var soTien = 0;
+        var soTien = {
+            tongTien: 0,
+            tienCho: 0,
+            tienKmDauTien: 0,
+            tienKm1Den20: 0,
+            tienKm20TroLen: 0,
+        };
         switch(this.loaiXe) {
             case "uberX":
                 x = 8000;
@@ -38,20 +43,25 @@ function ChuyenDi(loaiXe, soKM, thoiGianCho) {
         }
 
         if(this.soKM <=1 && this.soKM >=0){
-            soTien =x + thoiGianCho*t;
+            soTien.tongTien =x + this.thoiGianCho*t;
+            soTien.tienKmDauTien = x ;
+            soTien.tienCho = this.thoiGianCho*t;
         }else if(this.soKM <= 20){
-            soTien = x + (this.soKM - 1)*y + this.thoiGianCho*t;
-            
+            soTien.tongTien = x + (this.soKM - 1)*y + this.thoiGianCho*t;
+            soTien.tienKmDauTien = x ;
+            soTien.tienKm1Den20 = (this.soKM - 1)*y;
+            soTien.tienCho= this.thoiGianCho*t
         }else if(this.soKM > 20){
-            soTien = x + 19*y + (this.soKM - 20)*z + this.thoiGianCho*t;
-            
+            soTien.tongTien = x + 19*y + (this.soKM - 20)*z + this.thoiGianCho*t;
+            soTien.tienKmDauTien = x ;
+            soTien.tienKm1Den20 = 19*y;
+            soTien.tienKm20TroLen = (this.soKM - 20)*z;
+            soTien.tienCho = this.thoiGianCho*t;
         }
+        
         
         return soTien;   
 
     }  
     
-=======
-   
->>>>>>> 984f5736bfbe0da4c2c3b514dc0acd05b28ca7ab
 }

@@ -7,10 +7,13 @@
 function hienThiTongTien(){
     // bước 1:khachHang =  layThongTinChuyenDi()
     var khachHang = LayThongTinChuyenDi();
-    console.log(khachHang);
+    // console.log(khachHang);
     // Bước 2: var tongTien = khachHang.tinhTien();
-    var tongTien = khachHang.tinhTien();
-    // Bước 3: Hiển thị tổng tiền trên màn hình
-    document.getElementById("xuatTien").innerHTML = tongTien;
-    document.getElementById("divThanhTien").style.display = "block";
+    if(khachHang !== undefined){
+        var chiTietTien = khachHang.tinhTien();
+        console.log(chiTietTien)
+        // Bước 3: Hiển thị tổng tiền trên màn hình
+        document.getElementById("xuatTien").innerHTML = chiTietTien.tongTien;
+        document.getElementById("divThanhTien").style.display = "block";
+    }
 }
