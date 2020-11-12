@@ -45,23 +45,25 @@
 				<h2>Vui lòng chọn loại xe:</h2>
 				<ul>
 					<li class="type">
-						<input type="radio" name="selector">
+						<input type="radio" id="uberX" name="typeCar" value="uberX">
 						<label for="uberX">Uber X</label>
 
 						<div class="check"></div>
 					</li>
 
 					<li class="type">
-						<input type="radio" name="selector">
+						<input type="radio" id="uberSUV" name="typeCar" value="uberSUV">
 						<label for="uberSUV">Uber SUV</label>
 						<div class="check"></div>
 					</li>
 
 					<li class="type">
-						<input type="radio" name="selector">
+						<input type="radio" id="uberBlack" name="typeCar" value="uberBlack">
 						<label for="uberBlack">Uber Black</label>
 						<div class="check"></div>
 					</li>
+					<span id="tbLoaiXe" class="focus-input100"></span>
+
 				</ul>
 
 			</div>
@@ -70,14 +72,14 @@
 			<form class="contact100-form">
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<h2>Nhập vào số KM </h2>
-					<input class="input100" type="text" name="name" placeholder="Số KM ...">
-					<span class="focus-input100"></span>
+					<input id="nhapSoKm" class="input100" type="text" name="name" placeholder="Số KM ...">
+					<span id="tb-soKM" class="focus-input100"></span>
 
 				</div>
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<h2>Nhập thời gian chờ </h2>
-					<input class="input100" type="text" name="name" placeholder="Thời gian chờ  ...">
-					<span class="focus-input100"></span>
+					<input  id="nhapThoiGian" class="input100" type="text" name="name" placeholder="Thời gian chờ  ...">
+					<span id="tb-ThoiGianCho" class="focus-input100"></span>
 
 				</div>
 
