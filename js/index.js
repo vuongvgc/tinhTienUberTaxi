@@ -19,26 +19,19 @@ function getEle(id){
 * Bước 1 : Tạo biến Khách hàng và gán giá trị rổng
 */
 var chuyenXe = {};
-
 /*
 * Bước 2: Tình Tiến khi nhấn nút tính tiền
 */ 
 getEle("btn-tinhtien").addEventListener("click", function(){
     hienThiTongTien();
-   
+    chuyenXe = LayThongTinChuyenDi();   
+    getEle("btn-inhoadon").disabled = false;
 })
-
-
-
 
 /*
 * Bước 3: in hóa  khi nhấn nút in hóa đơn
-*/ 
+*/
 getEle("btn-inhoadon").addEventListener("click", function(){
-    var chuyenXe = LayThongTinChuyenDi();
-    console.log(chuyenXe);
-    if(chuyenXe !== undefined){
-         hienThiHoaDon(chuyenXe);
-    }
+    hienThiHoaDon(chuyenXe);
 })
 
