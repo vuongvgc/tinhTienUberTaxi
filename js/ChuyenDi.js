@@ -8,6 +8,7 @@
 *output: tongTien
 */
 function ChuyenDi(loaiXe, soKM, thoiGianCho) {
+<<<<<<< HEAD
     this.loaiXe = loaiXe,
     this.soKM = soKM,
     this.thoiGianCho = thoiGianCho,
@@ -50,4 +51,7 @@ function ChuyenDi(loaiXe, soKM, thoiGianCho) {
 
     }  
     
+=======
+   
+>>>>>>> 984f5736bfbe0da4c2c3b514dc0acd05b28ca7ab
 }

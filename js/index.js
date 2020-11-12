@@ -24,7 +24,19 @@ var chuyenXe = {};
 * Bước 2: Tình Tiến khi nhấn nút tính tiền
 */ 
 getEle("btn-tinhtien").addEventListener("click", function(){
+<<<<<<< HEAD
     console.log("tinh tien");
+=======
+    hienThiTongTien();
+})
+
+
+
+
+
+
+
+>>>>>>> 984f5736bfbe0da4c2c3b514dc0acd05b28ca7ab
 
     chuyenXe = LayThongTinChuyenDi();
 
